@@ -122,14 +122,16 @@ Answer: b) Comparing the Virtual DOM with the real DOM to efficiently update the
 
 
 
-**9. What is the result of 5 == "5"?**
+**9. Which of the following is considered a best practice for managing component-specific state in functional components? **
 ```js
-a) true
-b) false
+a) Using a global state management library.
+b) Direct DOM manipulation.
+c) The useState hook.
+d) Passing data via refs.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) true
+Answer: c) The useState hook.
 </ul>
 </details>
 
