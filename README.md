@@ -77,9 +77,9 @@ Answer: b) It helps React identify which items have changed, are added, or remov
 
 
 
-**6.How do you typically pass data from a parent component to a child component in React? **
+**6.How do you typically pass data from a parent component to a child component in React?**
 ```js
-) Via context only
+a) Via context only
 b) Via props
 c) Via state in the child component
 d) By directly accessing the parent's DOM
@@ -91,7 +91,7 @@ Answer: b) Via props
 </details>
 
 
-*** 7.What is the purpose of the StrictMode component in React? ***
+*** 7.What is the purpose of the StrictMode component in React?***
 ```js
 a) To enforce strict JavaScript syntax.
 b) To enable server-side rendering.
@@ -106,7 +106,7 @@ Answer:c) To highlight potential problems and deprecated practices in developmen
 
 
 
-**8. What is the core concept behind React's "reconciliation" process? **
+**8. What is the core concept behind React's "reconciliation" process?**
 ```js
 a) Manually updating the DOM based on state changes.
 b) Comparing the Virtual DOM with the real DOM to efficiently update the UI.
@@ -122,7 +122,7 @@ Answer: b) Comparing the Virtual DOM with the real DOM to efficiently update the
 
 
 
-**9. Which of the following is considered a best practice for managing component-specific state in functional components? **
+**9. Which of the following is considered a best practice for managing component-specific state in functional components?**
 ```js
 a) Using a global state management library.
 b) Direct DOM manipulation.
