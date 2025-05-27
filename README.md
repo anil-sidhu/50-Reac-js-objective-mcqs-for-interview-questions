@@ -1,4 +1,4 @@
-# JavaScript-100-objective-based-questions
+# React-50-Interview-Questions-2025
 
 
 **1. What is the primary motivation behind the introduction of React Hooks?**
