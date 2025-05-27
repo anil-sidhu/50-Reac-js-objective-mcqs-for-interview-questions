@@ -47,7 +47,7 @@ Answer: b) It groups multiple state updates into a single re-render for better p
 </details>
 
 
-** 4.Which of the following describes JSX??**
+** 4.Which of the following describes JSX?? **
 ```js
 a) A template language for defining styles.
 b) A runtime environment for JavaScript.
