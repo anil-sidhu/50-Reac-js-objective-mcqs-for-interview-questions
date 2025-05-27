@@ -300,53 +300,52 @@ Answer: b) To subscribe to external, mutable data sources (like Redux stores or 
 </details>
 
 
-**21 How do you access a property in an object?**
+**21 What is "prop drilling"? **
 ```js
-a) obj[property]
-b) obj.property
-c) Both a and b
-d) None of the above
+a) An optimized way of passing props.
+c) A method for drilling into a component's internal state.
+d) A technique for validating prop types.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) Both a and b
+Answer: b) The practice of passing data through multiple layers of nested components, even if intermediate components don't need the data.
 </ul>
 </details>
 
-**22. Which method is used to add a new element at the end of an array?**
+**22. Which React API is most commonly used to avoid "prop drilling"**
 ```js
-a) push()
-b) pop()
-c) shift()
-d) unshift()
+a) useRef
+b) Context API
+c) useReducer
+d) ReactDOM.createPortal
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) push()
-</ul>
-</details>
-
-
-**23 What will console.log([1,2,3].length); return? **
-```js
-a) 2
-b) 3
-c) 4
-d) undefined
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) 3
+Answer: b) Context API
 </ul>
 </details>
 
 
-**24 How do you remove first 2 element of an array?**
+**23 What is a Higher-Order Component (HOC)? **
 ```js
-a) pop()
-b) shift()
-c) unshift()
-d) splice()
+a) A component that renders other components.
+b) A function that takes a component as an argument and returns a new component with enhanced props or behavior.
+c) A component with a very large number of props.
+d) A component that uses many hooks.
+```
+<details>
+	<summary><b>View Answer</b></summary><ul>
+Answer: b) A function that takes a component as an argument and returns a new component with enhanced props or behavior.
+</ul>
+</details>
+
+
+**24 What is the primary benefit of React.memo **
+```js
+a) To prevent the component from ever rendering.
+b) To prevent unnecessary re-renders of functional components if their props (and state, if applicable) haven't shallowly changed.
+c) To force a re-render.
+d) To manage global state.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
@@ -355,116 +354,117 @@ Answer: d) splice()
 </details>
 
 
-**25 Which keyword allows block-scoped variable declarations? **
+**25 What is the purpose of "React Fragments"? **
 ```js
-a) var
-b) let
-c) const
-d) Both b and c
+a) To create a new component.
+b) To group multiple elements without adding an extra node to the DOM.
+c) To conditionally render elements.
+d) To enable concurrent mode.
 
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: d) Both b and c
+Answer: b) To group multiple elements without adding an extra node to the DOM.
 </ul>
 </details>
 
-**26 Which of the following is true about const variables?**
+**26 Which concept allows React to "pause" rendering and yield control to the browser, making the UI more responsive during heavy computations? **
 ```js
-a) Their values cannot be changed
-b) They cannot be reassigned
-c) They are always immutable
-d) All of the above
+a) Synchronous rendering
+b) Concurrent Rendering (or Concurrent Mode)
+c) Batching
+d) Server-Side Rendering (SSR)
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) They cannot be reassigned
-</ul>
-</details>
-
-
-**27. What is the output of console.log(typeof([]));? **
-```js
-a) "object"
-b) "array"
-c) "undefined"
-d) "null"
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) "object"
+Answer:  b) Concurrent Rendering (or Concurrent Mode)
 </ul>
 </details>
 
 
-**28 What is a template literal in JavaScript? **
+**27. What are "React Server Components" (RSCs)? **
 ```js
-a) A type of array
-b) A string enclosed in backticks (` `)
-c) A special function
-d) A new ES6 data type
+a) Components that only render on the server and send pure HTML to the client.
+b) Components that allow developers to build UIs that span across server and client, enabling efficient data fetching and reducing client-side JavaScript.
+c) Components that run exclusively in Web Workers.
+d) Deprecated components for legacy applications.
 ```
-
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) A string enclosed in backticks (` `)
+Answer:b) Components that allow developers to build UIs that span across server and client, enabling efficient data fetching and reducing client-side JavaScript.
 </ul>
 </details>
 
 
-**29. What will console.log(..."Hello"); output? **
+**28 How do "React Server Functions" (RSFs) relate to React Server Components? **
 ```js
-a) "H e l l o"
-b) ["H", "e", "l", "l", "o"]
-c) Syntax Error
-d) undefined
+a) They are the client-side counterparts of RSCs.
+b) They are functions that run on the server and can be called from client-side code, often used for data mutations.
+c) They are internal React core functions.
+d) They define the styling for RSCs.
 ```
+
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) "H e l l o"
+Answer: b) They are functions that run on the server and can be called from client-side code, often used for data mutations.
 </ul>
 </details>
 
 
-** 30. How do you define an arrow function? **
+**29.What is the primary benefit of "code splitting" and "lazy loading" in React? **
+```js
+a) Reduced development time.
+b) Improved initial load performance by loading only necessary code on demand.
+c) Enhanced security.
+d) Simplifies component testing.
 ```
-a) const add = (a, b) => a + b;
-b) const add = function(a, b) { return a + b; };
-c) Both a and b
-d) None of the above
+<details>
+	<summary><b>View Answer</b></summary><ul>
+Answer: b) Improved initial load performance by loading only necessary code on demand.
+</ul>
+</details>
+
+
+** 30. Which React feature typically works with React.lazy to provide a fallback UI while a dynamically imported component is loading **
+```
+a) React.Fragment
+b) React.Suspense
+c) React.memo
+d) ReactDOM.createPortal
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) const add = (a, b) => a + b;
+Answer: b) React.Suspense
 </ul>
 </details>
 
 
 
-**31 What does the spread operator ... do in JavaScript?**
+**31 Which of the following is generally considered a good practice for structuring a React project? **
 ```js
-a) Combines arrays
-b) Expands iterable elements
-C) All of the above
+a) Keeping all components in a single file.
+b) Grouping files by feature or domain, rather than by type (e.g., all components in one folder, all hooks in another).
+c) Avoiding the use of a src directory.
+d) Using only inline styles for all components.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: C) All of the above
+Answer: b) Grouping files by feature or domain, rather than by type (e.g., all components in one folder, all hooks in another).
 </ul>
 </details>
 
 
-** 32. What will console.log([...new Set([1, 2, 2, 3])]); return? **
+** 32. Which features are not so much useful in react 19? **
 ```js
-a) [1, 2, 3]
-b) [1, 2, 2, 3]
-c) Set {1, 2, 3}
-d) {1, 2, 3}
+a) useMemo
+b) useCallback
+c) HOC
+d) All of above
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) [1, 2, 3]
+Answer: d) All of above
 </ul>
 </details>
 
