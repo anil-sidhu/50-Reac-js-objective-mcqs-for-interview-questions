@@ -350,7 +350,7 @@ d) To manage global state.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: d) splice()
+Answer: b) To prevent unnecessary re-renders of functional components if their props (and state, if applicable) haven't shallowly changed.
 </ul>
 </details>
 
