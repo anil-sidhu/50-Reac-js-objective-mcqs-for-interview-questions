@@ -471,236 +471,216 @@ Answer: d) All of above
 
 **33. Which statement about arrow functions is true? **
 ```js
-a) They do not bind this
-b) They can be used as constructors
-c) They have a prototype property
-d) They support arguments keyword
+When dealing with gloabl data  in React, which library is often recommended for simplified state management and performance?
+a) Redux
+b) React Router
+c) React Hook Form
+d) Lodash
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) They do not bind this
+Answer: a) Redux
 </ul>
 </details>
 
 
-**34 Output of follow code? **
+**34 What is "list virtualization" (or "windowing") used for in React? **
 ```js
-function tryFruits(...fruits)
-{
-console.log(...fruits)
-}
+a) To virtualize the DOM for faster updates.
+b) To efficiently render long lists by only rendering the visible items within the viewport.
+c) To create virtual reality experiences.
+d) To manage server-side data.
 
-tryFruits('apple','banana','grapes')
 ```
+<details>
+	<summary><b>View Answer</b></summary><ul>
+Answer: b) To efficiently render long lists by only rendering the visible items within the viewport.
+</ul>
+</details>
+
+
+**35. How can you effectively handle side effects like data fetching or subscriptions in a functional component, ensuring proper cleanup? **
 ```js
-a) ['apple', 'banana', 'grapes']
-b) {'apple', 'banana', 'grapes'}
-c) 'apple 'banana grapes'
-d) 'apple'
+a) By using inline event handlers.
+b) By returning a cleanup function from the useEffect hook.
+c) By directly manipulating the DOM after data is fetched.
+d) By calling setState repeatedly.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a)  ['apple', 'banana', 'grapes']
+Answer: b) By returning a cleanup function from the useEffect hook.
 </ul>
 </details>
 
 
-**35. What is the purpose of JavaScript Promises?**
+**36.What does "unidirectional data flow" imply in a React application? **
 ```js
-a) Handle synchronous code
-b) Handle asynchronous operations
-c) Block execution until resolved
-d) Replace all callbacks
+a) Data can flow directly between any components.
+b) Data flows in a single direction (e.g., parent to child via props, or state updates triggered by actions).
+c) Data is always fetched from a single API endpoint.
+d) Only global state can be updated.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) Handle asynchronous operations
+Answer:  b) Data flows in a single direction (e.g., parent to child via props, or state updates triggered by actions).
 </ul>
 </details>
 
 
-**36. Which state is NOT valid for a Promise?**
+**37. What is an "Error Boundary" in React? **
 ```js
-a) Pending
-b) Fulfilled
-c) Rejected
-d) Running
+
+a) A component that defines the maximum number of errors allowed.
+b) A component that catches JavaScript errors anywhere in its child component tree, logs those errors, and displays a fallback UI.
+c) A feature that prevents all errors from occurring.
+d) A tool for server-side error logging.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: d) Running
+Answer: b) A component that catches JavaScript errors anywhere in its child component tree, logs those errors, and displays a fallback UI.
 </ul>
 </details>
 
 
-**37. Use of Await keyword ?**
+**38.Which tool is essential for debugging and profiling React components in the browser? ?**
+```
+a) Chrome Developer Tools' Elements tab.
+b) React DevTools browser extension.
+c) Node.js debugger.
+d) VS Code's built-in debugger.
+```
+<details>
+	<summary><b>View Answer</b></summary><ul>
+Answer: b) React DevTools browser extension.
+</ul>
+</details>
+
+
+
+**39 What is a key benefit of using a component library (e.g., Material-UI, Ant Design) in a React project? **
 ```js
-a) wait for an asynchronous operation to finish before continuing the execution
-b) make promise
-c) atop execution  
-d) all of above
+a) It prevents the use of custom CSS.
+b) It replaces the need for state management.
+c) It provides pre-built UI components, for fast development
+d) It is only useful for small projects.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) wait for an asynchronous operation to finish before continuing the execution
+Answer: c) It provides pre-built UI components, for fast development
 </ul>
 </details>
 
 
-**38. Which method selects an element by ID?**
-```
-a) document.getElementofId()
-b) document.getElementById()
-c) document.selectElementById()
-d) document.selectById()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) document.getElementById()
-</ul>
-</details>
-
-
-
-**39 Which event is triggered when an input field loses focus?**
+**40. What is a common best practice regarding useState and objects/arrays? **
 ```js
-a) click
-b) blur
-c) focus
-d) change
+a) Always creating a new object/array when updating state to ensure React detects the change and re-renders.
+b) Directly mutating the object/array and then calling the setter.
+c) Passing only primitive values to useState.
+d) Avoiding objects/arrays in state altogether.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) blur
+Answer: a) Always creating a new object/array when updating state to ensure React detects the change and re-renders.
 </ul>
 </details>
 
 
-**40. Which method adds an event listener to an element?**
+**41. Which popular framework built on React focuses heavily on Server-Side Rendering (SSR) and static site generation (SSG) for performance and SEO? **
 ```js
-a) element.addEventListener()
-b) element.attachEvent()
-c) element.onEvent()
-d) element.setEventListener()
+a) Angular
+b) Vue.js
+c) Next.js
+d) Express.js
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) element.addEventListener()
+Answer: c) Next.js
 </ul>
 </details>
 
-
-**41. What does event.preventDefault() do?**
+**43. Which of the following is true about props in React? **
 ```js
-a) Stops the default action of an event
-b) Stops event propagation
-c) Prevents event from being attached
-d) None of the above
+a) They are read-only
+b) They are mutable
+d) They can be changed by the child component
+d) They are used for internal component data
 ```
+
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) Stops the default action of an event
+Answer: a) They are read-only
 </ul>
 </details>
 
-**43. What is localStorage used for?**
+
+**44 Which of the following is a common approach to managing global state in a large React application beyond the Context API for more complex scenarios? **
 ```js
-a) Storing session data
-b) Storing data persistently in the browser
-c) Making API requests
-d) Caching images
+a) useState in the root component.
+b) Prop drilling extensively.
+d) LocalStorage directly.
+d) Redux, Recoil.
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) Storing data persistently in the browser
+Answer: d) Redux, Recoil.
 </ul>
 </details>
 
 
-**44 Which method converts a JavaScript object into a JSON string?**
+**45 What is "hydration" in the context of React's server-side rendering? **
 ```js
-a) JSON.stringify()
-b) JSON.parse()
-c) toJSON()
-d) parseJSON()
+a) The process where React attaches its event listeners and re-renders the server-rendered HTML into a fully interactive application on the client.
+b) The process of pre-fetching all data before rendering.
+c) The process of converting JSX to HTML on the server.
+d) The process of sending data from the client to the server.
 ```
-
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) JSON.stringify()
+Answer: a) The process where React attaches its event listeners and re-renders the server-rendered HTML into a fully interactive application on the client.
 </ul>
 </details>
 
 
-**45 What will console.log(parseInt("10px")) return?**
+**46. What is a "controlled component" in React forms?? **
 ```js
-a) 10
-b) NaN
-c) "10px"
-d) Error
+
+a) A component whose form data is handled by the DOM
+b) A component whose form data is handled by React state
+c) A component that does not accept user input
+d) A component rendered by a Higher-Order Component
 ```
+
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) 10
+Answer: b) A component whose form data is handled by React state
 </ul>
 </details>
 
 
-**46. Which method executes a function repeatedly with a time interval? **
+
+** 47. What is the difference between useEffect and useLayoutEffect? **
 ```js
-a) setInterval()
-b) setTimeout()
-c) repeat()
-d) setLoop()
-```
-
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) setInterval()
-</ul>
-</details>
-
-
-
-** 47. How do you check if a variable is an array?**
-```js
-a) typeof x === "array"
-b) x.isArray()
-c) Array.isArray(x)
-d) x instanceof Object
+a) useEffect runs synchronously, useLayoutEffect runs asynchronously.
+b) useLayoutEffect is deprecated.
+c) They are interchangeable; there is no difference.
+d) useEffect runs after the browser paints, useLayoutEffect runs synchronously before the browser paints.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) Array.isArray(x)
+Answer: d) useEffect runs after the browser paints, useLayoutEffect runs synchronously before the browser paints.
 </ul>
 </details>
-
 
 
 
 ** 48. What is a closure in JavaScript?**
 ```js
-a) A function inside another function that has access to its parent’s scope
-b) A block of code that runs automatically
-c) A way to define private variables
-d) Both a and c
-```
-
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) Both a and c
-</ul>
-</details>
-
-
-
-**49. Which of the following is true about closures?**
-```js
-a) Closures have access to their own scope
-b) Closures have access to their parent function's scope
-c) Closures have access to global scope
+Which of the following is a common way to style React components?
+a) Inline styles
+b) CSS Modules
+c) Styled-components (CSS-in-JS)
 d) All of the above
 ```
 
@@ -710,765 +690,38 @@ Answer: d) All of the above
 </ul>
 </details>
 
-**50.What will this code output?**
+
+
+**49. How are event handlers typically named in React? **
 ```js
-function outer() {
-    let count = 0;
-    return function inner() {
-        count++;
-        console.log(count);
-    };
-}
-const counter = outer();
-counter();
-counter();
+a) camelCase (e.g., onClick)
+b) lowercase (e.g., onclick)
+c) snake_case (e.g., on_click)
+d) PascalCase (e.g., OnClick)
 ```
 
-```js
-a) 1 2
-b) 0 1
-c) 1 1
-d) Error
-```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) 1 2
+Answer: a) camelCase (e.g., onClick)
 </ul>
 </details>
 
-
-**51. Which statement about var and let is true?**
+**50.What is the Virtual DOM in React? **
 ```js
-a) Both are function-scoped
-b) var is function-scoped, let is block-scoped
-c) Both are block-scoped
-d) var allows redeclaration, let doesn’t
+
+a) A real DOM that is faster than the browser's DOM
+b) A lightweight copy of the real DOM kept in memory
+c) A server-side rendering technique
+d) A way to directly manipulate the browser's DOM
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) var is function-scoped, let is block-scoped
-</ul>
-</details>
-
-
-**52. What will console.log(x); var x = 10; output?**
-```js
-a) 10
-b) undefined
-c) ReferenceError
-d) NaN
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) undefined
-</ul>
-</details>
-
-
-** 53. Which statement is used for error handling in JavaScript?**
-```js
-a) try...catch
-b) throw
-c) finally
-d) All of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) All of the above
-</ul>
-</details>
-
-
-**54 What happens if an error occurs inside the try block?**
-```js
-a) The script stops execution
-b) The error is caught in the catch block
-c) The script crashes
-d) The error is ignored
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) The error is caught in the catch block
-</ul>
-</details>
-
-
-**55. What will console.log(x); inside a try block with no catch or finally do?**
-```js
-a) Print undefined
-b) Print null
-c) Throw a ReferenceError
-d) Nothing
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) Throw a ReferenceError
-</ul>
-</details>
-
-
-**56. Which method is used to generate a custom error?**
-```js
-a) throw new Error()
-b) console.error()
-c) generateError()
-d) raiseError()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) throw new Error()
-</ul>
-</details>
-
-
-**57. What will finally do in a try-catch-finally block?**
-```js
-a) Execute only if no error occurs
-b) Execute only if an error occurs
-c) Always execute
-d) None of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) Always execute
-</ul>
-</details>
-
-
-**58. OOP (Object-Oriented Programming) in JavaScript
-Which keyword is used to create a class in JavaScript?**
-```js
-a) class
-b) function
-c) Class
-d) new Class
-
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) class
-</ul>
-</details>
-
-**59. What is the purpose of the constructor method in a class?**
-```js
-a) To create private variables
-b) To initialize object properties
-c) To call another class
-d) None of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) To initialize object properties
+Answer: b) A lightweight copy of the real DOM kept in memory
 </ul>
 </details>
 
 
 
-**60. Which keyword is used for inheritance in JavaScript?**
-```js
-a) implements
-b) extends
-c) inherits
-d) prototype
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) extends
-</ul>
-</details>
 
-
-
-**61. Which method in a class is used to call the parent class constructor?**
-```js
-a) parent()
-b) super()
-c) this()
-d) constructor()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) super()
-</ul>
-</details>
-
-
-**62 Which statement about JavaScript classes is true?**
-```js
-a) They support multiple inheritance
-b) They are syntactic sugar over prototypes
-c) They can be redeclared
-d) They do not support inheritance
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) They are syntactic sugar over prototypes
-</ul>
-</details>
-
-
-**63 Web APIs & Asynchronous JavaScript**
-```js
-Which API is used for making HTTP requests in JavaScript?
-a) XMLHttpRequest
-b) Fetch API
-c) Axios
-d) All of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) All of the above
-</ul>
-</details>
-
-
-**64. Which method sends a GET request using Fetch API?** 
-```js
-a) fetch(url)
-b) fetch(url, { method: 'GET' })
-c) Both a and b
-d) None of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) Both a and b
-</ul>
-</details>
-
-
-**65. What does navigator.geolocation.getCurrentPosition() do?**
-```js
-a) Gets user’s IP address
-b) Gets user’s location
-c) Opens a Google Maps page
-d) None of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) Gets user’s location
-</ul>
-</details>
-
-
-**66. Which storage API stores data persistently?**
-```js
-a) localStorage
-b) sessionStorage
-c) cookies
-d) All of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) localStorage
-</ul>
-</details>
-
-
-**67. How can you set an interval in JavaScript?**
-```js
-a) setTimeout()
-b) setInterval()
-c) setRepeat()
-d) Interval()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) setInterval()
-</ul>
-</details>
-
-
-
-**68 Which method removes an element from an array?**
-```js
-a) splice()
-b) slice()
-c) remove()
-d) delete()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) splice()
-</ul>
-</details>
-
-
-**69. Which JavaScript engine is used in Google Chrome?**
-```js
-a) SpiderMonkey
-b) V8
-c) Chakra
-d) Nitro
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) V8
-</ul>
-</details>
-
-**70. Which method converts a string into a number?**
-```js
-a) parseInt()
-b) Number()
-c) + (unary plus)
-d) All of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) All of the above
-</ul>
-</details>
-
-
-** 71. Which function generates a random number between 0 and 1?**
-```js
-a) Math.random()
-b) random()
-c) generateRandom()
-d) Math.rand()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) Math.random()
-</ul>
-</details>
-
-
-
-** 72. Which of the following is a falsy value in JavaScript?**
-```js
-a) "false"
-b) "0"
-c) undefined
-d) "undefined"
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) undefined
-</ul>
-</details>
-
-
-**73 What will console.log([] == false); return?**
-```js
-a) true
-b) false
-c) undefined
-d) Error
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) true
-</ul>
-</details>
-
-
-
-**74. Which of the following is NOT a primitive data type in JavaScript?**
-```js
-a) Number
-b) String
-c) Object
-d) Symbol
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) Object
-</ul>
-</details>
-
-**75 How do you deep clone an object in JavaScript?**
-```js
-a) Object.assign({}, obj)
-b) JSON.parse(JSON.stringify(obj))
-c) obj.clone()
-d) obj.copy()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) JSON.parse(JSON.stringify(obj))
-</ul>
-</details>
-
-
-**76. What is the output of console.log(2 + "2" - 1);?**
-```js
-a) "21"
-b) 21
-c) "22"
-d) 1
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) 21
-</ul>
-</details>
-
-
-
-**77. Which method is used to filter elements from an array?**
-```js
-a) map()
-b) filter()
-c) reduce()
-d) slice()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) filter()
-</ul>
-</details>
-
-
-
-**78 Which function combines array elements into a single value?**
-```js
-a) reduce()
-b) map()
-c) join()
-d) concat()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) reduce()
-</ul>
-</details>
-
-
-
-**79. What does the following code return?**
-```js
-console.log([1, 2, 3].map(num => num * 2));
-```
-```js
-a) [2, 4, 6]
-b) [1, 4, 9]
-c) [1, 2, 3]
-d) [2, 3, 4]
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) [2, 4, 6]
-</ul>
-</details>
-
-
-**80. Which of the following is NOT an immutable operation?***
-```js
-a) map()
-b) filter()
-c) splice()
-d) concat()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) splice()
-</ul>
-</details>
-
-
-**81. What is the event loop in JavaScript?**
-```js
-a) A process that handles function calls
-b) A mechanism that allows async operations
-c) A feature that prevents infinite loops
-d) A method to execute code
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) A mechanism that allows async operations
-</ul>
-</details>
-
-
-**82. Which of the following executes first in the event loop?**
-```js
-a) setTimeout()
-b) setInterval()
-c) Promise.resolve().then()
-d) console.log()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) console.log()
-</ul>
-</details>
-
-
-
-**83. Which queue does setTimeout() use in JavaScript?**
-```js
-a) Microtask queue
-b) Callback queue
-c) Event loop queue
-d) Execution stack
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) Callback queue
-</ul>
-</details>
-
-
-**84. What will be the output of this code?**
-```js
-console.log("A");
-setTimeout(() => console.log("B"), 0);
-console.log("C");
-```
-```js
-a) A B C
-b) A C B
-c) B A C
-d) C A B
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) A C B
-</ul>
-</details>
-
-**85. Which of the following is a best practice in JavaScript?**
-```js
-a) Using == instead of ===
-b) Avoiding global variables
-c) Using var instead of let
-d) Nesting loops as deep as possible
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) Avoiding global variables
-</ul>
-</details>
-
-
-**86. What does "debouncing" do in JavaScript?**
-```js
-a) Delays function execution until a pause in events
-b) Executes a function immediately
-c) Runs a function continuously
-d) None of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) Delays function execution until a pause in events
-</ul>
-</details>
-
-
-**87. What does "throttling" do?**
-```js
-a) Executes a function only at fixed intervals
-b) Prevents a function from running
-c) Removes unnecessary function calls
-d) Stops event propagation
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) Executes a function only at fixed intervals
-</ul>
-</details>
-
-
-**88. Which of the following improves JavaScript performance?**
-```js
-a) Minifying JavaScript files
-b) Using lazy loading
-c) Avoiding unnecessary DOM manipulations
-d) All of the above
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) All of the above
-</ul>
-</details>
-
-
-**89. What is the best way to check if a variable is null or undefined?**
-```js
-a) if (x == null)
-b) if (typeof x === "null")
-c) if (x === null || x === undefined)
-d) if (x == undefined)
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) if (x === null || x === undefined)
-</ul>
-</details>
-
-
-**90. What does document.createElement('div') do?**
-```js
-a) Creates and appends a div
-b) Creates a div but does not append it
-c) Selects an existing div
-d) Deletes all div elements
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) Creates a div but does not append it
-</ul>
-</details>
-
-
-**91. Which API is used to create animations in JavaScript?**
-```js
-a) WebGL
-b) requestAnimationFrame()
-c) animateCSS()
-d) window.setInterval()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) requestAnimationFrame()
-</ul>
-</details>
-
-
-
-**92. Which function removes whitespace from both ends of a string?**
-```js
-a) trim()
-b) slice()
-c) removeSpace()
-d) strip()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) trim()
-</ul>
-</details>
-
-
-**93. Which method removes the last element from an array?**
-```js
-a) pop()
-b) shift()
-c) splice()
-d) removeLast()
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) pop()
-</ul>
-</details>
-
-**94. What is the output of the following code?**
-```js
-console.log(myFunc);
-function myFunc() {
-    return "Hello";
-}
-```
-```
-A) undefined
-B) ReferenceError: myFunc is not defined
-C) [Function: myFunc]
-D) TypeError: myFunc is not a function
-
-```
-
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) ƒ myFunc() { return "Hello"; }
-</ul>
-</details>
-
-**95. Which of the following is an example of a higher-order function?**
-```js
-a) A function that returns another function
-b) A function with a return type of void
-c) A function that has a loop inside
-d) A function that only contains if-else statements
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) A function that returns another function
-</ul>
-</details>
-
-**96. Which method is used to handle asynchronous functions in JavaScript?**
-```js
-a) setTimeout()
-b) Promise.then()
-c) async/await
-d) All of the above
-```
-
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) All of the above
-</ul>
-</details>
-
- **97. Which of the following is NOT true about closures?**
- ```js
- a) A closure allows a function to retain access to variables from its outer scope.
-b) Closures are created every time a function is invoked.
-c) Closures help in data encapsulation.
-d) Closures cannot access global variables.
- ```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: d) Closures cannot access global variables.
-
-</ul>
-</details>
-
-**98. What will be the output of the following code?**
-```js
-const obj = {
-    value: 42,
-    getValue: () => {
-        return this.value;
-    }
-};
-console.log(obj.getValue());
-```
-```js
-a) 42
-b) undefined
-c) ReferenceError
-d) null
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) undefined
-</ul>
-</details>
-
-**99 What will be the output of the following asynchronous function?**
-```js
-async function foo() {
-    return "Hello";
-}
-console.log(foo());
-```
-```js
-a) "Hello"
-b) Promise { "Hello" }
-c) undefined
-d) Error
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: b) Promise { "Hello" }
-</ul>
-</details>
-
-**100. What is currying in JavaScript?**
-```js
-a) A technique where a function is transformed into a sequence of unary (one-argument) functions.
-b) A method to execute functions asynchronously.
-c) A way to cache function results for optimization.
-d) A technique to convert a function into a class.
-```
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: a) A technique where a function is transformed into a sequence of unary functions.	
-</ul>
-</details>
 
 
