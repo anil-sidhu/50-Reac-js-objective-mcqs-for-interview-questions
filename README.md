@@ -137,14 +137,17 @@ Answer: c) The useState hook.
 
 
 
-** 10. What is the result of type of  "5 " === " 5"? **
+** 10. What is the benefit of integrating TypeScript with React projects? **
 ```js
-a) true
-b) false
+
+a) Faster compilation times.
+b) Better developer tooling, type safety, and reduced runtime errors.
+c) Automatic performance optimization.
+d) Enables direct database access.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) false
+Answer: b) Better developer tooling, type safety, and reduced runtime errors.
 </ul>
 </details>
 
