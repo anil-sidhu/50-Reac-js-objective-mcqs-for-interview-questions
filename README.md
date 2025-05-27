@@ -303,6 +303,7 @@ Answer: b) To subscribe to external, mutable data sources (like Redux stores or 
 **21 What is "prop drilling"? **
 ```js
 a) An optimized way of passing props.
+b) The practice of passing data through multiple layers of nested components, even if intermediate components don't need the data.
 c) A method for drilling into a component's internal state.
 d) A technique for validating prop types.
 ```
@@ -312,7 +313,7 @@ Answer: b) The practice of passing data through multiple layers of nested compon
 </ul>
 </details>
 
-**22. Which React API is most commonly used to avoid "prop drilling"**
+**22. Which React API is most commonly used to avoid "prop drilling" **
 ```js
 a) useRef
 b) Context API
