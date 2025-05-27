@@ -153,162 +153,149 @@ Answer: b) Better developer tooling, type safety, and reduced runtime errors.
 
 
 
-** 11. Which loop is guaranteed to execute at least once? **
+** 11. When does the useEffect hook with an empty dependency array ([]) run? **
 ```
-a) for loop
-b) while loop
-c) do-while loop
-d) None of the above
+
+a) After every render.
+b) Only on the initial render (mount) and clean-up on unmount.
+c) Whenever any state or prop changes.
+d) Before the component mounts.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) do-while loop
+Answer: b) Only on the initial render (mount) and clean-up on unmount.
 </ul>
 </details>
 
 
 
-**12. Output of this for loop loop**
+**12. What does the return statement inside useEffect with a non-empty dependency array typically represent? **
 ```js 
-for(;;) {
-console.log("Loop")
-}
+a) The next state value.
+b) A cleanup function for the effect.
+c) A JSX element to render.
+d) A promise to be resolved.
 ```
-```js
-a) Infinit Loop 
-b) Loop will not execute
-c) Error
-d) Only Run once 
-```
+
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) Infinit Loop
+Answer: b) A cleanup function for the effect.
 </ul>
 </details>
 
 
-** 13. What will console.log(typeof NaN); print? **
+** 13. Which hook is designed for managing complex state logic that involves multiple sub-values or when the next state depends on the previous one? **
 ```js
-a) "number"
-b) "NaN"
-c) "undefined"
-d) "object"
+a) useState
+b) useEffect
+c) useContext
+d) useReducer
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) "number"
+Answer: d) useReducer
 </ul>
 </details>
 
 
-**14. Output of below statment**
+**14. What is the primary use case for useRef? t**
 ```js
-let x=null;
-let y=null;
-console.log(x+y) 
-```
-```js
-a) null
-b) object
-c) 0
-d) undefined
+a) To manage component state.
+b) To perform side effects.
+d) To subscribe to external stores.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) 0
+Answer: c) To directly access DOM elements or persist mutable values across renders without causing re-renders.
 </ul>
 </details>
 
 
-*** 15. What will console.log(typeof function(){}); return? ***
+*** 15. When would you typically use useCallback? ***
 ```js
-a) "function"
-b) "object"
-c) "undefined"
-d) "null"
+a) To prevent a function from being called.
+b) To memoize a computed value that is expensive to calculate.
+c) To memoize a function definition to prevent unnecessary re-creations, often when passing callbacks to optimized child components.
+d) To replace a class component.
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: a) "function"
+Answer: c) To memoize a function definition to prevent unnecessary re-creations, often when passing callbacks to optimized child components.
 </ul>
 </details>
 
 
-*** 16. What will console.log(typeof function(){}(); return? ***
+*** 16. What is the purpose of useMemo? ***
 ```js
-a) "function"
-b) "object"
-c) "undefined"
-d) "null"
+a) To memoize a function so it's not redefined on every render.
+b) To memoize a computed value, preventing expensive recalculations unless its dependencies change.
+c) To create a persistent reference to a DOM node.
+d) To manage asynchronous operations.
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) "undefined"
+Answer: b) To memoize a computed value, preventing expensive recalculations unless its dependencies change.
 </ul>
 </details>
 
-*** 17. What is the default return value of a function in JavaScript if no return statement is used? ***
+*** 17. Which new hook introduced in React is used to generate unique IDs for related elements on both the client and server? ***
 ```js
-a) null
-b) undefined
-c) false
-d) 0
+a) useTransition
+b) useDeferredValue
+c) useId
+d) useSyncExternalStore
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: b) undefined
-</ul>
-</details>
-
-
-** 18. Which type of function executes immediately after its definition? **
-```js
-a) Anonymous function
-b) Named function
-c) IIFE (Immediately Invoked Function Expression)
-d) Arrow function
-```
-
-<details>
-	<summary><b>View Answer</b></summary><ul>
-Answer: c) IIFE
+Answer: c) useId
 </ul>
 </details>
 
 
-**19 Outpout of below statment ** 
+** 18. What does the useTransition hook facilitate in React ? **
 ```js
- console.log(x);
- let x = 5; 
-```
-```js 
-a) 5
-b) undefined
-c) ReferenceError
-d) NaN
+a) Synchronous updates that block the main thread.
+b) Marking specific state updates as "transitions" (non-urgent) to keep the UI responsive.
+c) Performing immediate, high-priority updates.
+d) Handling component unmounting.
 ```
 
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) ReferenceError
+Answer: b) Marking specific state updates as "transitions" (non-urgent) to keep the UI responsive.
 </ul>
 </details>
 
 
-**20. How do you create an object in JavaScript? **
+**19 The useDeferredValue hook is similar to useTransition but for what purpose? ** 
 ```js
-a) let obj = {};
-b) let obj = new Object();
-c) Both a and b
-d) None of the above
+a) To defer state updates in a queue.
+b) To defer updating a value until a more urgent update has completed, improving responsiveness.
+c) To defer component unmounting.
+d) To defer prop passing.
+```
+
+<details>
+	<summary><b>View Answer</b></summary><ul>
+Answer: b) To defer updating a value until a more urgent update has completed, improving responsiveness.
+</ul>
+</details>
+
+
+**20. What is the role of useSyncExternalStore in React  **
+```js
+a) To manage local component state.
+b) To subscribe to external, mutable data sources (like Redux stores or browser APIs) and ensure React components re-render when they change.
+c) To create custom hooks.
+d) To optimize network requests.
 ```
 <details>
 	<summary><b>View Answer</b></summary><ul>
-Answer: c) Both a and b
+Answer: b) To subscribe to external, mutable data sources (like Redux stores or browser APIs) and ensure React components re-render when they change.
 </ul>
 </details>
 
