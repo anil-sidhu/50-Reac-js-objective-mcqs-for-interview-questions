@@ -470,9 +470,8 @@ Answer: d) All of above
 </details>
 
 
-**33. Which statement about arrow functions is true? **
+**33. When dealing with gloabl data  in React, which library is often recommended for simplified state management and performance? **
 ```js
-When dealing with gloabl data  in React, which library is often recommended for simplified state management and performance?
 a) Redux
 b) React Router
 c) React Hook Form
